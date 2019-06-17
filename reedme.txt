@@ -1,0 +1,27 @@
+Node.js® — це JavaScript–оточення побудоване на JavaScript–рушієві Chrome V8.
+Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+https://nodejs.org/en/
+
+npm install -g parcel-bundler (https://parceljs.org/getting_started.html)
+npm init -y
+parcel --no-cache index.html
+
+
+npm install @babel/polyfill (https://golb.hplar.ch/2018/01/Bundling-web-applications-with-Parcel.html)
+
+npm init / npm i
+npm install
+
+npm i jquery (https://www.npmjs.com/package/jquery)
+
+npm install slick-carousel (https://www.npmjs.com/package/slick-carousel)
+
+npm install scrollreveal (https://www.npmjs.com/package/scrollreveal)
+
+parcel build --no-cache --no-minify index.html
+parcel --no-cache build index.html
+
+parcel build src/index.html -d build --public-url
+
+https://scrollrevealjs.org/guide/customization.html
+https://jsbin.com/nanarafezo/edit?html,output

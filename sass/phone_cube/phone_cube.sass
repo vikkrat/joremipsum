@@ -1,0 +1,94 @@
+.phone_cube
+    position: relative
+    width: 280px
+    height: 250px
+    padding: 0
+    margin-right: 60px
+    margin-left: 60px
+    // background: pink
+    box-sizing: border-box
+    @media only screen and (max-width: 760px)
+        margin: 0 auto
+    @media only screen and (max-width: 340px)
+        height: 320px
+    &__item_big
+        margin: 0 auto
+        position: absolute
+        top: 0
+        left: 0
+        width: 189px
+        height: auto
+        border: 2px solid #fdbd1f
+        background-color: #ab6f80
+        padding: 17px 17px 0px 17px
+        border-radius: 20px
+        text-align: center
+        box-sizing: border-box
+        @media only screen and (max-width: 340px)
+            top: 50px
+            left: 30px
+        &_top
+            height: 172px
+            border: 2px solid #fdbd1f
+            background-color: #ab6f80
+            padding: 17px 17px 6px 17px
+            border-radius: 5px
+            box-sizing: border-box
+        &_bott
+            width: 26px
+            height: 26px
+            border: 2px solid #fdbd1f
+            background-color: #ab6f80
+            margin: 6px 0px 6px 0px
+            border-radius: 50%
+            display: inline-block
+            box-sizing: border-box
+    &__item_small
+        position: absolute
+        top: 32px
+        right: 7px
+        width: 115px
+        height: auto
+        border: 2px solid #fdbd1f
+        background-color: #ab6f80
+        padding: 0px 17px 0px 17px
+        border-radius: 20px
+        text-align: center
+        box-sizing: border-box
+        overflow: hidden
+        @media only screen and (max-width: 340px)
+            top: 5px
+            left: 135px
+            z-index: 25
+            border: 2px solid coral
+        &_top
+            height: 9px
+            width: 30px
+            display: inline-block
+            border: 2px solid #fdbd1f
+            background-color: #ab6f80
+            margin: 12px 0px 8px 0px
+            border-radius: 9px
+            box-sizing: border-box
+            @media only screen and (max-width: 340px)
+                border: 2px solid lawngreen
+        &_center
+            height: 106px
+            border: 2px solid #fdbd1f
+            background-color: #ab6f80
+            padding: 17px 17px 6px 17px
+            border-radius: 5px
+            box-sizing: border-box
+            @media only screen and (max-width: 340px)
+                border: 2px solid coral
+        &_bott
+            width: 26px
+            height: 26px
+            border: 2px solid #fdbd1f
+            background-color: #ab6f80
+            margin: 2px 0px 2px 0px
+            border-radius: 50%
+            display: inline-block
+            box-sizing: border-box
+            @media only screen and (max-width: 340px)
+                border: 2px solid lawngreen

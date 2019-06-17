@@ -1,0 +1,95 @@
+.header
+    width: 100%
+    height: auto
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 3000
+    box-sizing: border-box
+    &__top
+        width: 100%
+        min-height: 5px
+        background-color: #fdbd1f
+        box-sizing: border-box
+    &__base
+        width: 95%
+        min-height: 80px
+        background-color: #ffffff
+        padding: 0 2.5%
+        display: flex
+        justify-content: space-between
+    &__poster
+        width: 100%
+        height: auto
+        overflow: hidden
+        // min-height: 440px
+        // box-shadow: 0 1px 0 rgba(232, 232, 232, 0.75)
+        // background: #f6f6f6 url("../img/header/header_poster.png")
+        // background-size: cover
+        // background-attachment: fixed
+        // background-repeat: no-repeat
+        // background-position: center
+        // text-align: center
+        // padding-top: 250px
+        @media only screen and (max-width: 760px)
+            
+        &_title1,
+        &_title2
+            margin: 0.5px
+            color: #ffffff
+            font: 31px/31px 'Source Sans Pro', sans-serif
+            font-weight: 900
+            letter-spacing: 2.48px
+            padding: 15px 11px
+            background-color: #ab6f80
+            display: inline-block
+            opacity: 0.67
+.logo
+    width: 150px
+    display: flex
+    cursor: pointer
+    text-decoration: none
+    &__bell
+        color: #fdbd1f
+        font-size: 31px
+        font-weight: 400
+        padding-top: 16px
+        padding-right: 12px
+        text-decoration: none
+    &__name
+        width: 100%
+        color: #9e8e92
+        &_title
+            width: 100%
+            font: 19px/12px "Source Sans Pro"
+            font-weight: 700
+        &_graph
+            width: 100%
+            font: 15px/0px "Source Sans Pro"
+            font-weight: 300
+.nav
+    width: auto
+    @media only screen and (max-width: 720px)
+        display: none
+    &__link
+        display: inline-block
+        width: 100px
+        // height: 100%
+        text-align: center
+        padding: 36px 0
+        text-decoration: none
+        color: #9e8e92
+        font: 13px "Source Sans Pro"
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 0.52px
+        box-sizing: border-box
+        &:hover
+            background-color: #fdbd1f
+            color: #ffffff
+
+
+
+
+
+

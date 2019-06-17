@@ -1,0 +1,205 @@
+.menu_hid
+    display: none
+    @media only screen and (max-width: 720px)
+        display: block
+    
+#wrap
+    background: #ab6f80
+    // width: 100%
+    height: 100%
+
+#menu
+    border: solid #ab6f80
+    border-radius: 10px
+    position: absolute
+    top: 16px
+    // left: 0
+    right: 2.5%
+    // bottom: 0
+    margin: auto
+    transition: 0.5s ease-in-out
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+.menubar
+    width: 40px
+    height: 5px
+    margin: 5px
+    background: #fdbd1f
+    border-radius: 3px
+    z-index: 10
+    transition: 0.5s 0.5s ease-in-out, background 0.2s ease-in-out
+    &:nth-child(1)
+        -webkit-animation: bars 1s
+        animation: bars 1.8s
+    &:nth-child(2)
+        -webkit-animation: bars 1.5s
+        animation: bars 1.8s
+        &:nth-child(3)
+            -webkit-animation: bars 2s
+            animation: bars 1.8s
+
+@-webkit-keyframes bars
+    0%
+        width: 0%
+    100%
+        width: 40px
+@keyframes bars
+    0%
+        width: 0%
+    100%
+        width: 40px
+
+
+.active
+    width: 95%
+    height: 60vh
+    background: #ab6f80
+    opacity: 0.87
+    z-index: 2
+    border: solid #fdbd1f 18px !important
+    border-radius: 5px !important
+
+.hid
+    width: 55px
+    height: 40px
+
+#menuwrap
+    width: 55px
+    height: 40px
+    float: left
+    &:hover
+        cursor: pointer
+
+.active2
+    margin-top: 10px
+    transition: 0.5s ease-in-out
+
+.hid2
+    transition: 0.5s ease-in-out
+
+.active2 .menubar
+    background: #fdbd1f
+    &:nth-child(1)
+        transform: rotate(45deg)
+        margin-top: 10px
+    &:nth-child(2)
+        transform: rotate(-45deg)
+        margin-top: -10px
+    &:nth-child(3)
+        opacity: 0
+
+.hidtext
+    opacity: 0
+    visibility: hidden
+    transition: 0.5s ease-in-out
+    top: 15%
+
+.shotext
+    opacity: 1
+    top: 0
+    visibility: visible
+    transition: 0.8s 0.5s ease-in-out
+
+#text
+    color: #FFFFFF
+    font-size: 42px
+    text-align: left
+    position: absolute
+    top: 10%
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    text-align: center
+
+#click
+    font: 12px "Source Sans Pro"
+    text-align: center
+    opacity: 0.87
+    margin-top: 30px
+    color: #ab6f80
+    -webkit-animation: move 2.3s 10s infinite
+    animation: move 2.3s 10s infinite
+
+@-webkit-keyframes move
+    0%
+        opacity: 0
+    25%
+        opacity: 1
+    30%
+        margin-left: 20px
+    50%
+        margin-left: -20px
+    70%
+        margin-left: 0
+    75%
+        opacity: 1
+    100%
+        opacity: 0
+
+
+@keyframes move
+    0%
+        opacity: 0
+    25%
+        opacity: 1
+    30%
+        margin-left: 20px
+    50%
+        margin-left: -20px
+    70%
+        margin-left: 0
+    75%
+        opacity: 1
+    100%
+        opacity: 0
+
+
+/* THIS IS FOR ME :P
+
+#me
+    padding: 5px 30%
+    width: 100%
+    text-decoration: none
+    color: #fdbd1f
+    opacity: 1
+    font: 14px "Source Sans Pro"
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 0.52px
+    box-sizing: border-box
+    &:hover
+        background-color: #fdbd1f
+        color: #ffffff
+
+// #backme
+//   background: #262626
+//   width: 0
+//   height: 100%
+//   position: absolute
+//   top: 0
+//   left: 0
+//   z-index: -1
+//   transition: 0.2s ease-in-out
+
+// #me
+//   &:hover
+//     cursor: pointer
+//     color: tomato
+//   &:active
+//     box-shadow: 1px 1px 1px #424242
+//   &:hover #backme
+//     width: 100%
+
+// a
+//   text-decoration: none
+
+// @media only screen and (max-height: 400px)
+//   #me
+//     background: tomato
+//     bottom: 0
+//     right: 0
+//     position: fixed !important
+//     border: solid 1px tomato
