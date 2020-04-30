@@ -2,7 +2,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
     "autoprefixer": "^9.4.10",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "postcss-modules": "^1.4.1",
     "scrollreveal": "^4.0.5",
     "slick-carousel": "^1.8.1"
